@@ -1,0 +1,106 @@
+/*КЛАСИ ДЛЯ НАВІГАЦІЙНОЇ ПАНЕЛІ*/
+.nav-section{
+    background-color: var(--color-grey-dark); /*змінити задній колір навігаційньої панельки можна туть*/
+}
+
+.navbar-menu-1, .navbar-menu-2, 
+.navbar-menu-3, .navbar-menu-4,
+.navbar-menu-5, .navbar-menu-6,
+.navbar-menu-7{
+    color: var( --color-light); /*змінити колір елементів меню можна туть*/
+    text-decoration: none; /*забирає дефолтні підкреслення посилань та інші налаштування браузера, не видаляти*/
+}
+
+.navbar{ /*не чіпати, робить вирівнювання*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-family: var(--ubuntu-font); /*змінити шрифт менюшки можна туть*/
+    font-weight: var(--font-weight-bold); /*змінити жирність шрифта менюшки можна туть*/
+    font-size: var(--body); /*змінити розмір шрифта менюшки можна туть*/
+}
+
+.navbar-icons img{ /*не чіпати, змінює курсор*/
+    cursor: pointer;
+}
+
+.navbar-icons{ /*не чіпати, ховає іконки*/
+    display: none;
+}
+
+.hide { /*не чіпати*/
+    display: none;
+}
+
+.tittle{
+    font-size: var(--h2); /*розмір тексту заголовків можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт заголовків можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    margin-bottom: 40px;
+}
+
+.usual-text{
+    font-size: var(--body); /*розмір тексту заголовків можна змінити туть*/
+    font-family: var(--manrope-font); /*шрифт заголовків можна змінити туть*/
+    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+/*КЛАСИ ДЛЯ ПЕРШОЇ СЕКЦІЇ - БАНЕР*/
+.section-1 {
+    height: 700px;
+    width: 100%;
+    background-image: url("../images/banner_img.png"); /*змінити фонове зображення для першого розділу можна туть*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-1-content{ /*не чіпати (вирівнювання)*/
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.slogan{
+    font-size: var(--h1); /*розмір тексту слогану можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт слогану можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+.sub-slogan{
+    font-size: var(--label); /*розмір тексту під-слогану можна змінити туть*/
+    font-family: var(--manrope-font); /*шрифт під-слогану можна змінити туть*/
+    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+/* КЛАСИ ДЛЯ ДРУГОЇ СЕКЦІЇ*/
+.section-2{
+    margin-top: 100px;
+}
+
+.section-2-content{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    margin-bottom: 60px;
+}

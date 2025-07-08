@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk"> <!--задаємо українську мову для сторінки lang="uk"-->
+<head>
+    <meta charset="UTF-8"> <!-- Щоб український текст і всі символи відображались правильно -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Щоб сайт добре виглядав на телефонах і планшетах -->
+    <title>Template 1</title> <!--заголовок, який буде відображатися у вкладці браузера-->
+
+     <!--підключення файликів які відповідають за стиль сторінки-->
+    
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general_styles.css"> 
+
+    <!--Підключення шрифтів, із сайту google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!--НАВІГАЦІЙНА ПАНЕЛЬКА-->
+        <header class="nav-section">
+            <nav class="navbar container">
+                <!--логотип-->
+                <div class="navbar-logo">
+                    <img src="images/logo_img.png" alt="logo image" class="navbar-logo-image">
+                </div>
+                <!--пункти меню-->
+                <div class="navbar-menu hidden">
+                    <a href="" class="navbar-menu-1">Головна</a>
+                    <a href="" class="navbar-menu-2">Про нас</a>
+                    <a href="" class="navbar-menu-3">Цінності</a>
+                    <a href="" class="navbar-menu-4">Факти</a>
+                    <a href="" class="navbar-menu-5">Команда</a>
+                    <a href="" class="navbar-menu-6">Зв'язок</a>
+                    <a href="" class="navbar-menu-7">FAQ</a>
+                </div>
+                <!--іконки відкривання та закривання меню, відображатиметься лише для малих екранів-->
+                <div class="navbar-icons">
+                    <img src="images/menu_icon.png" alt="menu" class="menu-icon">
+                    <img src="images/close_icon.png" alt="close" class="close-icon hide">
+                </div>
+
+            </nav>
+        </header>
+    
+        <!--ОСНОВНИЙ КОНТЕНТ САЙТУ-->
+        <main>
+            <!--СЕКЦІЯ 1 - БАНЕР-->
+            <div class="section-1">
+                <div class="section-1-content container grid">
+                    <h1 class="slogan span-8-start-3">Слоган бізнесу або фраза яка закликає до дії, описує цінність та унікальну пропозицію бізнесу</h1>
+                    <p class="sub-slogan span-8-start-3">Під слоган, пояснення послуги, бенефіти які надаємо, менш важлива інформація або тип бізнесу</p>
+                    <button class="custom-button span-2-start-6">Кнопка</button>
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 2 - ПРО НАС-->
+            <div class="section-2">
+                <div class="section-2-content container grid">
+                    <h2 class="tittle span-8-start-3">Ми компанія, яка займається, ми пропонуємо унікальні можливості</h2>
+                    <p class="usual-text span-8-start-3">Опис ідеї, бізнесу, стартапу, що конкретно ми пропонуємо/ особливості, для кого наш товар або послуги, короткий опис</p>
+                </div>
+            </div>
+           
+
+        </main>
+        
+
+        <!--ФУТЕР ІЗ КОНТАКТНОЮ ІНФОЮ-->
+        <footer class="container">
+            Big Fish Academy. All rights reserved ©
+        </footer>
+
+    </div>
+    
+</body>
+
+<!--додаємо скрипт-->
+<script src="main.js"></script>
+
+</html>

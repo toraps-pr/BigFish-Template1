@@ -1,0 +1,175 @@
+/* все що в :root це css змінні, кольори, шрифти ітд. які ми будемо використовувати повторно для стилізації нашої сторінки, 
+для того щоб створити свою змінну її ім'я має починатися з -- (двох дефісів)*/
+
+:root{
+    /*кольори (задавати ці змінні у валастивості color та background-color) (можна змінити/додати свої)*/
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-grey-dark: #929292;
+
+    /*розміри шрифтів (задавати ці змінні у валастивості font-size) (можна змінити/додати свої)*/
+    --h1: 48px;
+    --h2: 36px;
+    --label: 24px;
+    --body: 20px;
+    --accent: 26px;
+    --small: 18px;
+
+    /*шрифти (задавати ці змінні у валастивості font-family) 
+    (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
+    --ubuntu-font: "Ubuntu", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
+
+    /*жирність шрифтів (задавати ці змінні у валастивості font-weight)
+    (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+/*задаємо загальний стиль для всіх кнопок*/
+.custom-button{
+    cursor: pointer;
+    font-size: var(--label); /*розмір тексту кнопки можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт кнопки можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту кнопки можна змінити туть*/
+    color: var(--color-light); /*колір тексту можна змінити туть*/
+    background-color: var(--color-dark); /*колір самої кнопки можна змінити туть*/
+    border: none; /*задати контур кнопки*/
+    border-radius: 12px; /*радіус кнопки можна змінити туть*/
+    padding: 16px 80px; 
+}
+
+
+/*
+! ВСЕ ЩО ДАЛІ ЧІПАТИ НЕ МОЖНА
+*/
+
+/*стиль для всіх елементів на сторінці*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*робимо футер прижатим до низу сторінки*/
+body, html{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main{
+    flex-grow: 1;
+}
+
+
+/*цей клас вирівнює розділи по центру сторінки і дає однакові відступи від країв екрану*/
+.container {
+    max-width: 1360px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*адаптивність зображень*/
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
+
+/*розмітка по колонках*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px; 
+}
+
+.span-3 {
+  grid-column: span 3; 
+}
+
+.span-4 {
+  grid-column: span 4; 
+}
+
+.span-6 {
+  grid-column: span 6; 
+}
+
+.span-12 {
+  grid-column: span 12; 
+}
+
+.span-8-start-3 {
+  grid-column: 3 / span 8; /* починається з 3-ї колонки, займає 8 */
+}
+
+.span-2-start-6 {
+  grid-column: 6 / span 2; 
+  display: flex;
+  justify-content: center;      
+
+}
+
+
+
+
+/*
+320 пікселів найменший розмір екрану
+480 середні телефони
+768 планшети
+1440 десктопи
+1920 великі екрани
+*/
+
+/*адаптив для різних екранів*/
+@media (max-width: 1440px) { 
+    .container {
+        max-width: none; /* Знімаємо обмеження max-width, щоб контент розтягувався на менших екранах */
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1020px) { 
+    .navbar-menu{
+        z-index: 1;
+        background-color: var(--color-grey-dark);
+        position: absolute;
+        top: 10vh;
+        width: 100%;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .navbar-icons{
+        display: block;
+    }
+
+    .navbar-menu-1{
+        margin-top: -200px;
+    }
+
+    .hidden{
+        z-index: -1;
+        opacity: 0%;
+    }
+
+    .slogan{
+        font-size: var(--h2); 
+    }
+
+    .sub-slogan{
+        font-size: var(--body); 
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+}
