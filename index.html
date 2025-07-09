@@ -18,15 +18,19 @@
 
 <body>
 
+    <!--!ТЕСТОВІ ССИЛКИ НА КНОПКИ, АНІМАЦІЯ ПРИ ХУВЕРІ, кнопку перехерячити в а-->
+
     <div class="wrapper">
 
         <!--НАВІГАЦІЙНА ПАНЕЛЬКА-->
         <header class="nav-section">
             <nav class="navbar container">
+                
                 <!--логотип-->
                 <div class="navbar-logo">
                     <img src="images/logo_img.png" alt="logo image" class="navbar-logo-image">
                 </div>
+
                 <!--пункти меню-->
                 <div class="navbar-menu hidden">
                     <a href="" class="navbar-menu-1">Головна</a>
@@ -37,6 +41,7 @@
                     <a href="" class="navbar-menu-6">Зв'язок</a>
                     <a href="" class="navbar-menu-7">FAQ</a>
                 </div>
+
                 <!--іконки відкривання та закривання меню, відображатиметься лише для малих екранів-->
                 <div class="navbar-icons">
                     <img src="images/menu_icon.png" alt="menu" class="menu-icon">
@@ -48,8 +53,10 @@
     
         <!--ОСНОВНИЙ КОНТЕНТ САЙТУ-->
         <main>
+
             <!--СЕКЦІЯ 1 - БАНЕР-->
             <div class="section-1">
+                <!--слоган, підслоган та кнопка (зображення встановлений як задній фон в стилях в класі section-1 у файлі index.css)-->
                 <div class="section-1-content container grid">
                     <h1 class="slogan span-8-start-3">Слоган бізнесу або фраза яка закликає до дії, описує цінність та унікальну пропозицію бізнесу</h1>
                     <p class="sub-slogan span-8-start-3">Під слоган, пояснення послуги, бенефіти які надаємо, менш важлива інформація або тип бізнесу</p>
@@ -58,24 +65,249 @@
             </div>
 
             <!--СЕКЦІЯ 2 - ПРО НАС-->
-            <div class="section-2">
-                <div class="section-2-content container grid">
+            <div class="section-gap container">
+
+                <!--Заголовок та опис секції про нас-->
+                <div class="section-2-content grid">
                     <h2 class="tittle span-8-start-3">Ми компанія, яка займається, ми пропонуємо унікальні можливості</h2>
                     <p class="usual-text span-8-start-3">Опис ідеї, бізнесу, стартапу, що конкретно ми пропонуємо/ особливості, для кого наш товар або послуги, короткий опис</p>
                 </div>
+
+                <!--4 картки, з прикладом товару або послуги яку надаємо-->
+                <div class="grid">
+
+                    <!--Картка №1-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">Приклад</p>
+                        <img src="images/card_icon.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Приклад послуги яку надаємо або твару, бенефіт №1</p>
+                    </div>
+
+                    <!--Картка №2-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">Приклад</p>
+                        <img src="images/card_icon.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Приклад послуги яку надаємо або твару, бенефіт №2</p>
+                    </div>
+
+                    <!--Картка №3-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">Приклад</p>
+                        <img src="images/card_icon.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Приклад послуги яку надаємо або твару, бенефіт №3</p>
+                    </div>
+
+                    <!--Картка №4-->
+                    <div class="card-section-2 span-3">
+                        <p class="label-text">Приклад</p>
+                        <img src="images/card_icon.png" alt="icon" class="responsive-image gaps-for-card">
+                        <p class="usual-text">Приклад послуги яку надаємо або твару, бенефіт №4</p>
+                    </div>
+
+                </div>
+
             </div>
            
+            <!--СЕКЦІЯ 3 - Цінності (Мета та місія)-->
+            <div class="section-gap container">
+                
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">Наша мета та місія</h2>
+                </div>
+
+                <!--3 карточки про мету та місію-->
+                <div class="grid">
+
+                    <!--Картка №1-->
+                    <div class="card-section-3 span-4">
+                        <img src="images/card_image_long.png" alt="image" class="span-1 responsive-image">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Заголовок</p>
+                            <p class="usual-text">Якою є основна мета вашого стартапу?</p>
+                        </div>
+                    </div>
+
+                    <!--Картка №2-->
+                    <div class="card-section-3 span-4">
+                        <img src="images/card_image_long.png" alt="image" class="span-1 responsive-image">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Заголовок</p>
+                            <p class="usual-text">Якою є основна мета вашого стартапу?</p>
+                        </div>
+                    </div>
+
+                    <!--Картка №3-->
+                    <div class="card-section-3 span-4">
+                        <img src="images/card_image_long.png" alt="image" class="span-1 responsive-image">
+                        <div class="span-1">
+                            <p class="label-text gap-20px">Заголовок</p>
+                            <p class="usual-text">Якою є основна мета вашого стартапу?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 4 - Факти-->
+            <div class="section-4 section-gap">
+                <div class="container">
+
+                    <!--Заголовок-->
+                    <div class="grid">
+                        <h2 class="tittle span-6-start-4">Досягнення, факти, цифри</h2>
+                    </div>
+
+                    <!--картки - заголовки фактів-->
+                    <div class="grid">
+                        <!--Заголовок картки 1-->
+                        <div class="card-tittle-section-4 span-3 accent-text">4 дні</div>
+                        <!--Заголовок картки 2-->
+                        <div class="card-tittle-section-4 span-3 accent-text">4 учасники</div>
+                        <!--Заголовок картки 3-->
+                        <div class="card-tittle-section-4 span-3 accent-text">1 MVP</div>
+                        <!--Заголовок картки 4-->
+                        <div class="card-tittle-section-4 span-3 accent-text">10 фідбеків</div>
+                    </div>
+
+                    <!--картки - опис фактів-->
+                    <div class="grid">
+                        <!--Заголовок картки 1-->
+                        <div class="card-content-section-4 span-3 usual-text">Опис того чого стосується цифра, статистика</div>
+                        <!--Заголовок картки 2-->
+                        <div class="card-content-section-4 span-3 usual-text">Опис того чого стосується цифра, статистика</div>
+                        <!--Заголовок картки 3-->
+                        <div class="card-content-section-4 span-3 usual-text">Опис того чого стосується цифра, статистика</div>
+                        <!--Заголовок картки 4-->
+                        <div class="card-content-section-4 span-3 usual-text">Опис того чого стосується цифра, статистика</div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!--СЕКЦІЯ 5 - Команда-->
+            <div class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">Наша команда</h2>
+                </div>
+
+                <!--картки учасників команди-->
+                <div class="grid">
+
+                    <!--Картка 1-->
+                    <div class="card-section-5 span-3">
+                        <img src="images/team_member_img.png" alt="image" class="responsive-image">
+                        <p class="label-text gap-30px">Ім’я Прізвище</p>
+                        <p class="usual-text gap-16px">Product manager</p>
+                    </div>
+
+                    <!--Картка 2-->
+                    <div class="card-section-5 span-3">
+                        <img src="images/team_member_img.png" alt="image" class="responsive-image">
+                        <p class="label-text gap-30px">Ім’я Прізвище</p>
+                        <p class="usual-text gap-16px">Project manager</p>
+                    </div>
+
+                    <!--Картка 3-->
+                    <div class="card-section-5 span-3">
+                        <img src="images/team_member_img.png" alt="image" class="responsive-image">
+                        <p class="label-text gap-30px">Ім’я Прізвище</p>
+                        <p class="usual-text gap-16px">UX & UI designer</p>
+                    </div>
+
+                    <!--Картка 4-->
+                    <div class="card-section-5 span-3">
+                        <img src="images/team_member_img.png" alt="image" class="responsive-image">
+                        <p class="label-text gap-30px">Ім’я Прізвище</p>
+                        <p class="usual-text gap-16px">Front-end developer</p>
+                    </div>
+                       
+                </div>
+            </div>
+
+            <!--СЕКЦІЯ 6 - Зв'зок (залишити за'явку ітд.)-->
+            <div class="section-6 section-gap">
+                <div class="container grid">
+
+                    <!--заголовок, текст, кнопка-->
+                    <div class="span-6-start-2 extra-box">
+                        <h2 class="tittle">Заклик затестувати, спробувати, залишити за’явку</h2>
+                        <p class="usual-text">Опис чому ми повинні залишити за’явку прямо зараз, чому ми повинні спробувати продукт або послугу</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="custom-button span-2 button-extra">Кнопка</button>
+                        </div>
+                    </div>
+
+                    <!--зображення-->
+                    <div class="span-4-start-8">
+                        <img src="images/adv_img.png" alt="image" class="responsive-image" >
+                    </div>
+
+                </div>
+            </div>
+            
+            <!--СЕКЦІЯ 7 - FAQ-->
+            <div class="section-gap container">
+
+                <!--Заголовок-->
+                <div class="grid">
+                    <h2 class="tittle span-6-start-4">FAQ Відповіді на поширені питання</h2>
+                </div>
+
+                <!--Блоки питання-відповіді-->
+               <div class="faq-section grid">
+
+                    <!--блок 1-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Для кого наш стартап?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <img class="arrow-icon faq-padding" src="images/arrow.svg" alt="стрілка">
+                        </summary>
+                        <p class="opened-content usual-text">Цей продукт для тих хто, він підійде для, допоможе та, чудовий вибір альтернатива для тих хто</p>
+                    </details>
+
+                    <!--блок 2-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Для кого наш стартап?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <img class="arrow-icon faq-padding" src="images/arrow.svg" alt="стрілка">
+                        </summary>
+                        <p class="opened-content usual-text">Цей продукт для тих хто, він підійде для, допоможе та, чудовий вибір альтернатива для тих хто</p>
+                    </details>
+
+                    <!--блок 3-->
+                    <details class="span-10-start-2">
+                        <summary>
+                            <p class="faq-padding label-text">Для кого наш стартап?</p>
+                            <!-- якщо іконки стрілок будуть змінюватись то їх шляхи також потрібно буде змінити у файлі main.js-->
+                            <img class="arrow-icon faq-padding" src="images/arrow.svg" alt="стрілка">
+                        </summary>
+                        <p class="opened-content usual-text">Цей продукт для тих хто, він підійде для, допоможе та, чудовий вибір альтернатива для тих хто</p>
+                    </details>
+
+                </div>
+            </div>
 
         </main>
         
-
         <!--ФУТЕР ІЗ КОНТАКТНОЮ ІНФОЮ-->
-        <footer class="container">
-            Big Fish Academy. All rights reserved ©
+        <footer class="section-gap">
+            <div class="container">
+                <p class="usual-text gap-20px"><span class="usual-text-bold">tel:</span>+380 (096) XXX XX XX</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">e-mail:</span>big.boss.design.company@gmail.com</p>
+                <p class="usual-text gap-20px"><span class="usual-text-bold">location:</span>Kyiv, Ukraine</p>
+            </div>
+            <div class="small-text container center-footer">
+                Big Fish Academy. All rights reserved ©
+            </div>
         </footer>
 
     </div>
-    
 </body>
 
 <!--додаємо скрипт-->
