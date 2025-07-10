@@ -32,4 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// посилання для першої кнопки
+document.getElementById('btn-1').addEventListener('click', () => {
+  window.open('https://bigfish.academy/', '_blank');
+});
+
+// посилання для другої кнопки
+document.getElementById('btn-2').addEventListener('click', () => {
+  window.open('https://bigfish.academy/', '_blank');
+});
+
 

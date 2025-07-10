@@ -161,9 +161,10 @@
     height: auto;
     padding: 40px;
     border-radius: 26px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 24px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gap-20px{
@@ -249,10 +250,13 @@
     justify-content: center;
 }
 
+.extra-span{
+    grid-column: span 2;
+}
+
 .spacer {
     display: flex;
-    flex-grow: 1;
-    
+    flex-grow: 1;   
 }
 
 .extra-box{
@@ -260,6 +264,11 @@
     flex-direction: column;
 }
 
+.image-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -270,6 +279,16 @@
 
 .faq-padding{
     padding: 20px 40px;
+}
+
+.arrow-padding{
+    padding: 20px 40px 20px 20px;
+}
+
+
+.arrow-icon{
+    height: 40px;
+    width: 40px;
 }
 
 details {
@@ -309,6 +328,6 @@ summary::-webkit-details-marker {
 
 footer{
     background-color: var(--color-grey-dark); /*змінити задній колір футера можна туть*/
-    padding: 40px;
+    padding: 40px 0;
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
