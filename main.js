@@ -17,6 +17,23 @@ closeBtn.addEventListener("click",()=>{
     menu.classList.toggle("hidden");
 });
 
+
+// Знаходимо всі елементи з класом .navbar-menu-item
+const menuItems = document.querySelectorAll(".navbar-menu-item");
+
+// Додаємо обробник події на кожен пункт меню
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        // При кліку ховаємо меню
+        menu.classList.toggle("hidden");
+        
+        // Повертаємо іконки до початкового стану
+        openBtn.classList.toggle("hide");
+        closeBtn.classList.toggle("hide");
+    });
+});
+
+
 // це код зміни стрілок при відкритті і закритті FAQ блоків
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('details').forEach(details => {
@@ -34,12 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // посилання для першої кнопки
 document.getElementById('btn-1').addEventListener('click', () => {
-  window.open('https://bigfish.academy/', '_blank');
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLScFdVqWIRvp9vPDtTNgIp7-4bdl1MPWzIL_xmz_hFKq43uoXg/viewform?usp=dialog', '_blank');
 });
 
 // посилання для другої кнопки
 document.getElementById('btn-2').addEventListener('click', () => {
-  window.open('https://bigfish.academy/', '_blank');
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSexulakCh56KsAbyZD3PtYp1pi99-UA4Oaarp2w0I6gQ-D9YQ/viewform?usp=dialog', '_blank');
 });
 
 

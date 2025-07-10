@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Щоб сайт добре виглядав на телефонах і планшетах -->
     <title>Template 1</title> <!--заголовок, який буде відображатися у вкладці браузера-->
 
-     <!--підключення файликів які відповідають за стиль сторінки-->
-    
+    <!--підключення файликів які відповідають за стиль сторінки-->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/general_styles.css"> 
 
@@ -17,8 +16,6 @@
 </head>
 
 <body>
-
-    <!--! АНІМАЦІЯ ПРИ ХУВЕРІ, пункти меню клікабильні-->
 
     <div class="wrapper">
 
@@ -33,13 +30,13 @@
 
                 <!--пункти меню-->
                 <div class="navbar-menu hidden">
-                    <a href="" class="navbar-menu-1">Головна</a>
-                    <a href="" class="navbar-menu-2">Про нас</a>
-                    <a href="" class="navbar-menu-3">Цінності</a>
-                    <a href="" class="navbar-menu-4">Факти</a>
-                    <a href="" class="navbar-menu-5">Команда</a>
-                    <a href="" class="navbar-menu-6">Зв'язок</a>
-                    <a href="" class="navbar-menu-7">FAQ</a>
+                    <a href="#section-1" class="navbar-menu-item">Головна</a>
+                    <a href="#section-2" class="navbar-menu-item">Про нас</a>
+                    <a href="#section-3" class="navbar-menu-item">Цінності</a>
+                    <a href="#section-4" class="navbar-menu-item">Факти</a>
+                    <a href="#section-5" class="navbar-menu-item">Команда</a>
+                    <a href="#section-6" class="navbar-menu-item">Зв'язок</a>
+                    <a href="#section-7" class="navbar-menu-item">FAQ</a>
                 </div>
 
                 <!--іконки відкривання та закривання меню, відображатиметься лише для малих екранів-->
@@ -55,7 +52,7 @@
         <main>
 
             <!--СЕКЦІЯ 1 - БАНЕР-->
-            <div class="section-1">
+            <div id="section-1" class="section-1">
                 <!--слоган, підслоган та кнопка (зображення встановлений як задній фон в стилях в класі section-1 у файлі index.css)-->
                 <div class="section-1-content container grid">
                     <h1 class="slogan span-8-start-3">Слоган бізнесу або фраза яка закликає до дії, описує цінність та унікальну пропозицію бізнесу</h1>
@@ -65,7 +62,7 @@
             </div>
 
             <!--СЕКЦІЯ 2 - ПРО НАС-->
-            <div class="section-gap container">
+            <div id="section-2" class="section-gap container">
 
                 <!--Заголовок та опис секції про нас-->
                 <div class="section-2-content grid">
@@ -109,7 +106,7 @@
             </div>
            
             <!--СЕКЦІЯ 3 - Цінності (Мета та місія)-->
-            <div class="section-gap container">
+            <div id="section-3" class="section-gap container">
                 
                 <!--Заголовок-->
                 <div class="grid">
@@ -144,7 +141,7 @@
             </div>
 
             <!--СЕКЦІЯ 4 - Факти-->
-            <div class="section-4 section-gap">
+            <div id="section-4" class="section-4 section-gap">
                 <div class="container">
 
                     <!--Заголовок-->
@@ -180,7 +177,7 @@
             </div>
             
             <!--СЕКЦІЯ 5 - Команда-->
-            <div class="section-gap container">
+            <div id="section-5" class="section-gap container">
 
                 <!--Заголовок-->
                 <div class="grid">
@@ -222,7 +219,7 @@
             </div>
 
             <!--СЕКЦІЯ 6 - Зв'зок (залишити за'явку ітд.)-->
-            <div class="section-6 section-gap">
+            <div id="section-6" class="section-6 section-gap">
                 <div class="container grid reverse-section-6">
 
                     <!--заголовок, текст, кнопка-->
@@ -244,7 +241,7 @@
             </div>
             
             <!--СЕКЦІЯ 7 - FAQ-->
-            <div class="section-gap container">
+            <div id="section-7" class="section-gap container">
 
                 <!--Заголовок-->
                 <div class="grid">

@@ -36,9 +36,18 @@
     font-weight: var(--font-weight-bold); /*жирність тексту кнопки можна змінити туть*/
     color: var(--color-light); /*колір тексту можна змінити туть*/
     background-color: var(--color-dark); /*колір самої кнопки можна змінити туть*/
-    border: none; /*задати контур кнопки*/
+    border: solid; /*задати контур кнопки*/
+    border-color: transparent;
+    border-width: 4px;
     border-radius: 12px; /*радіус кнопки можна змінити туть*/
     padding: 16px 80px; 
+}
+
+/*задаємо загальний стиль для всіх кнопок при наведенні мишкою*/
+.custom-button:hover{
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    background-color: transparent; /*колір самої кнопки можна змінити туть*/
+    border-color: var(--color-dark);
 }
 
 
@@ -142,20 +151,6 @@ body, html{
 .span-10-start-2 {
     grid-column: 2 / span 10;
 }
-
-
-
-
-
-
-
-/*
-320 пікселів найменший розмір екрану
-480 середні телефони
-768 планшети
-1440 десктопи
-1920 великі екрани
-*/
 
 /*адаптив для різних екранів*/
 @media (max-width: 1440px) { 
@@ -286,6 +281,11 @@ body, html{
         height: 30px;
         width: 30px;
     }
+
+    .custom-button{
+        border-width: 3px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -353,7 +353,7 @@ body, html{
     }
 
     details {
-        border-radius: 12px; /* заокруглення кутів можна задати тут */
+        border-radius: 12px; 
         margin-bottom: 20px; 
     }
 
