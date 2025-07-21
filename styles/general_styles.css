@@ -185,12 +185,20 @@ body, html{
     .span-4 {
         grid-column: span 6; 
     }
+
+    .section-1 {
+        height: 600px;
+    }
 }
 
 @media (max-width: 900px){
     .card-section-2, .card-section-3, .card-tittle-section-4, 
     .card-section-5, details{
         border-radius: 16px;
+    }
+
+    .card-section-2, .card-section-3, .card-section-5{
+       padding: 30px;
     }
 }
 
@@ -331,9 +339,6 @@ body, html{
         height: auto;
     }
 
-    .navbar-menu{
-        gap: 20px;
-    }
 }
 
 
